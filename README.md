@@ -2,7 +2,7 @@
 
 This repository contains basic to intermediate Data Structures and Algorithms implemented in Python.
 
-- ### List based collections
+- ### Collections
   - Linked List
   - Stacks
   - Queues
