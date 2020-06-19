@@ -2,7 +2,7 @@
 
 This repository contains basic to intermediate Data Structures and Algorithms implemented in Python.
 
-- ### Collections
+- ### [Collections](https://github.com/ammalik221/Python-Data-Structures/tree/master/Collections)
   - Linked List
   - Stacks
   - Queues
