@@ -1,9 +1,64 @@
 class Element(object):
     def __init__(self, value):
-        """ an element has two componenets, a value and a reference to the next node """
+        # an element has two componenets, a value and a reference to the next node 
         self.value = value
         self.next = None
 
+        
+class Linked_List():
+    def __init__(self, head=None):
+        # by default head is None
+        self.head = head
+        
+    def append(self, new_element):
+        # adding an element at the end of the list
+        # two cases, one, when there isn't a head element and the other when there is a head element
+        current = self.head
+        if self.head:
+            while current.next: # iterating through the list
+                current = current.next
+            current.next = new_element
+        else:
+            self.head = new_element
+        
+        print("New element inserted")
+        
+    def get_element_position(self, position):
+        # getting an element at a particular position considering head position = 1
+        if position < 1:
+            print("Enter a valid position(>=1)")
+        elif position == 1:
+            return self.head
+        else:
+            count = 1
+            current = self.head
+            while current and count <= position:
+                if count == position:
+                    return current
+                current = current.next
+                count += 1
+            return "Position not found"
+        
+    def insert_element(self, new_element, position):
+        # insert a new element at a particular position
+        current = self.head
+        if position < 1:
+            print("Enter a valid position(>=1)")
+        elif position == 1:
+            new_element.next = self.head
+            self.head = new_element
+        else:
+            count = 1
+            while current and count <= position:
+                if count == position - 1:
+                    new_element.next = current.next
+                    current.next = new_element
+                    return
+                count += 1
+                current = current.next
+            return "Position Not Found"
+
+        
 if __name__ == "__main__":
     # test cases
     # creating 3 Linked List elements
