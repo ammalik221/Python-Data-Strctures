@@ -1,3 +1,7 @@
+"""
+Implementation of Linked List using Python 3.0.
+"""
+
 class Element(object):
     def __init__(self, value):
         # an element has two componenets, a value and a reference to the next node 
@@ -57,6 +61,18 @@ class Linked_List():
                 count += 1
                 current = current.next
             return "Position Not Found"
+        
+    def delete_value(self, value):
+        current = self.head
+        previous_element = None
+        while current.value != value and current:
+            previous_element = current
+            current = current.next
+        
+        if previous:
+            previous.next = current.next
+        else:
+            self.head = current.next
 
         
 if __name__ == "__main__":
@@ -75,31 +91,31 @@ if __name__ == "__main__":
     linked_list.append(b)
     linked_list.append(c)
     
-    """ output is - 
-        10 
-        22 
-        24 """
+    # output is - 
+    # 10 
+    # 22 
+    # 24
     linked_list.print_list()
     
-    # output is 10 and 24 respectively
+    # output is 10 and 22 respectively
     print(linked_list.get_element_position(1).value)
     print(linked_list.get_element_position(2).value)
 
     linked_list.insert_element(d, 2)
     linked_list.insert_element(e, 5)
     
-    """output is -
-        10
-        28
-        22
-        24
-        30"""
+    # output is -
+    # 10
+    # 28
+    # 22
+    # 24
+    # 30
     linked_list.print_list()
     
     linked_list.delete_value(10)
-    """output is - 
-        28
-        22
-        24
-        30"""
+    # output is - 
+    # 28
+    # 22
+    # 24
+    # 30
     linked_list.print_list()
