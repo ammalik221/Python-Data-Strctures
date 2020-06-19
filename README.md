@@ -8,7 +8,7 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Queues
   - Priority Queues
 
-- ### Searching and Sorting
+- ### [Searching and Sorting](https://github.com/ammalik221/Python-Data-Structures/tree/master/Searching_and_Sorting)
   - Binary Search
   - Bubble Sort
   - Merge Sort
