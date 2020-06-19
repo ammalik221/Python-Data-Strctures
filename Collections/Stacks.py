@@ -53,7 +53,7 @@ class Stack(object):
         self.ll.insert_top(new_element)
     
     def pop(self):
-        return self.ll..delete_top()
+        return self.ll.delete_top()
       
     def printStack(self):
         self.ll.print_list()
@@ -61,4 +61,30 @@ class Stack(object):
 if __name__ == "__main__":
     # test cases
     a = Element(10)
-   
+    b = Element(24)
+    c = Element(28)
+    d = Element(30)
+    
+    # creating a stack with top a
+    stack = Stack(a)
+    
+    # push two elements in the stack
+    stack.push(b)
+    stack.push(c)
+    
+    # output is - 
+    # 28
+    # 24 
+    # 10
+    stack.printStack()
+    
+    # output is 28 and 24 respectively
+    print(stack.pop().value)
+    print(stack.pop().value)
+
+    stack.push(d)
+    
+    # output is -
+    # 30
+    # 10
+    stack.printStack()
