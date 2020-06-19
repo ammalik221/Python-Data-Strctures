@@ -4,31 +4,32 @@ Implementation of Linked List using Python 3.0.
 
 class Element(object):
     def __init__(self, value):
-        # an element has two componenets, a value and a reference to the next node 
+        """ An element has two componenets, a value and a reference to the next node. """
         self.value = value
         self.next = None
 
         
 class Linked_List():
     def __init__(self, head=None):
-        # by default head is None
+        """ If no value is provided, head's default value is None. """
         self.head = head
         
     def append(self, new_element):
-        # adding an element at the end of the list
-        # two cases, one, when there isn't a head element and the other when there is a head element
+        """ Adding an element at the end of the list """
+        # There will be two cases, one, when there isn't a head element and the other when there is a head element
         current = self.head
         if self.head:
-            while current.next: # iterating through the list
+            # iterating through the list
+            while current.next:
                 current = current.next
+            # when current.next doesn't exist, that is, it's value is None, add the new element.
             current.next = new_element
         else:
             self.head = new_element
-        
         print("New element inserted")
         
     def get_element_position(self, position):
-        # getting an element at a particular position considering head position = 1
+        """ getting an element at a particular position considering head position = 1"""
         if position < 1:
             print("Enter a valid position(>=1)")
         elif position == 1:
@@ -36,7 +37,9 @@ class Linked_List():
         else:
             count = 1
             current = self.head
+            # iterating through the list
             while current and count <= position:
+                # when position found return the current element
                 if count == position:
                     return current
                 current = current.next
@@ -44,7 +47,7 @@ class Linked_List():
             return "Position not found"
         
     def insert_element(self, new_element, position):
-        # insert a new element at a particular position
+        """ insert a new element at a particular position """
         current = self.head
         if position < 1:
             print("Enter a valid position(>=1)")
@@ -53,7 +56,9 @@ class Linked_List():
             self.head = new_element
         else:
             count = 1
+            # iterating through the loop
             while current and count <= position:
+                # when current position is less than required position by 1
                 if count == position - 1:
                     new_element.next = current.next
                     current.next = new_element
@@ -63,14 +68,17 @@ class Linked_List():
             return "Position Not Found"
         
     def delete_value(self, value):
+        """ delete an element of the given value """
         current = self.head
         previous_element = None
+        # iterating till current's value is not equal to required value
         while current.value != value and current:
             previous_element = current
             current = current.next
-        
+        # update the previous element to point to the element after the current element.
         if previous:
             previous.next = current.next
+            current.next = None
         else:
             self.head = current.next
 
