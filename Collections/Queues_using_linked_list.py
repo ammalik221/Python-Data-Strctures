@@ -36,11 +36,37 @@ class Queue(object):
           
     def print_queue(self):
         current = self.head
-        while current != self.tail:
+        while current:
             print(current.value)
+            if current == self.tail:
+                break
             current = current.next
             
             
 if __name__ == "__main__":
     # test cases
-    q = Queue(10)
+    a = Element(10)
+    b = Element(20)
+    c = Element(30)
+    d = Element(40)
+    # make a queue
+    q = Queue(a)
+    
+    # add elements
+    q.enqueue(b)
+    q.enqueue(c)
+    q.enqueue(d)
+    
+    # output is - 10 20 30 40
+    q.print_queue()
+    
+    # look at the front element
+    # output is 10
+    print(q.front())
+    
+    # remove elements from queue
+    # output is 30 and 40 respectively
+    q.dequeue()
+    q.dequeue()
+    
+    q.print_queue()
