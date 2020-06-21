@@ -1,6 +1,9 @@
 """
 Bubble Sort Algorithm implementation in python 3.0
 
+The effeciency of this algorithm is O(n^2), which is not that great.
+If you want more effecient algorithms, check out the other sorting algorithms in Searching_and_Sorting folder.
+
 I have implemented three functions in this file, each implementing bubble sort but each with
 some extra technique which can drastically affect runtime, as the size of array increases.
 
