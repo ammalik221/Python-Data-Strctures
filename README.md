@@ -14,4 +14,4 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Merge Sort
 
 - ### [Maps and hashing](https://github.com/ammalik221/Python-Data-Structures/tree/master/Maps_and_Hashing)
-  - Dictionaries
+  - Hash Map
