@@ -1,6 +1,6 @@
 # Python Data Structures
 
-This repository contains basic to intermediate Data Structures and Algorithms implemented in Python.
+This repository contains basic to intermediate Data Structures and Algorithms implemented in Python 3.0
 
 - ### [Collections](https://github.com/ammalik221/Python-Data-Structures/tree/master/Collections)
   - Linked List
