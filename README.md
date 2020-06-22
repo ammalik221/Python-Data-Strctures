@@ -12,6 +12,14 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Binary Search
   - Bubble Sort
   - Merge Sort
+  - Quick Sort
 
 - ### [Maps and hashing](https://github.com/ammalik221/Python-Data-Structures/tree/master/Maps_and_Hashing)
   - Hash Map
+
+- ### [Trees](https://github.com/ammalik221/Python-Data-Structures/tree/master/Trees)
+  - Depth first traversal
+  - Breadth first traversal
+  - Heaps
+  - Binary Search Tree
+  - Read-Black Trees
