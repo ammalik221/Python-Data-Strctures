@@ -20,26 +20,32 @@ class PriorityQueue(object):
         return self.length==0
 
     def enqueue(self, value):
+        """ insering an element according to it's priority """
         new_element = Element(value)
         new_element.next = None
 
+        # if list is empty
         if self.length == 0:
             self.head = self.tail = new_element
         
+        # new element is inserted at the head
         elif new_element.priority > self.head.priority:
             new_element.next = self.head
             self.head = new_element
-
+        
+        # new element is inserted at the tail
         elif new_element.priority < self.tail.priority:
             self.tail.next = new_element
             self.tail = new_element
 
         else:
             current = self.head
-            while current.next:
+            while current:
+                # find the correct position, where the new element
+                # needs to be entered
                 if current.priority > new_element.priority:
                     current = current.next
-                break
+                    break
             new_element.next = current.next
             current.next = new_element
         self.length += 1
