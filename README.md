@@ -23,3 +23,13 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Heaps
   - Binary Search Tree
   - Read-Black Trees
+
+- ### [Graphs](https://github.com/ammalik221/Python-Data-Structures/tree/master/Graphs)
+  - Graph Representations
+  - Traversal
+  
+- ### [Miscellaneous Algorithms](https://github.com/ammalik221/Python-Data-Structures/tree/master/Miscellaneous)
+  - Dijkstra's Algorithm
+  - Knapsack Problem
+  - Dynamic Programming
+  - Travelling Saleman Problem
