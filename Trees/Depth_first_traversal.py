@@ -3,19 +3,34 @@ Depth First Search implementation on a binary Tree in Python 3.0
 
 Working - 
 recursion calls associated with printing the tree are in the following order - 
-        - preorder_print(1, "")
+        - print(1, "")
           |- traversal = "1"
-          |- preorder_print(2, "1")
+          |- print(2, "1")
           |  |- traversal = "12"
-          |  |-preorder_print(4, "12")
-          |    |- traversal = "124"
-          |    |- preorder_print(None, "124")
-          |  |- preorder_print(5, "124")
-          |    |- traversal = "1245"
-          |    |- preorder_print(None, "1245")
-          |- preorder_print(3, "1245")
+          |  |- print(4, "12")
+          |  |  |- traversal = "124"
+          |  |  |- print(None, "124")
+          |  |  |- print(None, "124")
+          |  |- print(5, "124")
+          |  |  |- traversal = "1245"
+          |  |  |- print(None, "1245")
+          |  |  |- print(None, "1245")
+          |- print(3, "1245")
           |  |- traversal = "12453"
-          |  |-preorder_print(None, "12453")
+          |  |- print(None, "12453")
+          |  |- print(None, "12453")
+          
+
+recursion calls associated in searching are in the following order - 
+        - search(1, 5)                ----------------- True
+          |- search(2,5)              ----------------- True
+          |  |- search(4, 5)          ----------------- False
+          |  |  |- search(None, 5)    ----------------- False
+          |  |  |- search(None, 5)    ----------------- False
+          |  |- search(5,5)           ----------------- True
+          |- search(3, 5)             ----------------- False
+          |  |-search(None, 5)        ----------------- False
+          |  |- search(None, 5)       ----------------- False
 """
 
 class Node(object):
