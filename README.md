@@ -34,10 +34,11 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Dynamic Programming
   - Travelling Saleman Problem
   
+<br/>
   
 # HackerRank Python
 
-Solutions of Python problems which are provided by HackerRank.([Here.](https://www.hackerrank.com/domains/python))
+Solutions of Python problems which are provided by HackerRank.([Here](https://www.hackerrank.com/domains/python))
   
   - ### [Introduction](https://github.com/ammalik221/Python-Data-Structures/tree/master/HackerRank_Solutions/Introduction)
     - Say Hello, World! With Python
