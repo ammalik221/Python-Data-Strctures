@@ -33,3 +33,19 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Knapsack Problem
   - Dynamic Programming
   - Travelling Saleman Problem
+  
+  
+# HackerRank Python
+
+Solutions of Python problems which are provided by HackerRank.([Here.]())
+  
+  - ### [Introduction]()
+    - [Say Hello, World! With Python](Introduction/SayHelloWorldWithPython.py)
+    - [Reading Raw Input](Introduction/ReadingRawInput.py)
+    - [Python If-Else](Introduction/PythonIfElse.py)
+    - [Arithmetic Operators](Introduction/ArithmeticOperators.py)
+    - [Python: Division](Introduction/PythonDivision.py)
+    - [Loops](Introduction/Loops.py)
+    - [Write a function](Introduction/Writeafunction.py)
+    - [Print Function](Introduction/PrintFunction.py)
+
