@@ -37,15 +37,16 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   
 # HackerRank Python
 
-Solutions of Python problems which are provided by HackerRank.([Here.]())
+Solutions of Python problems which are provided by HackerRank.([Here.](https://www.hackerrank.com/domains/python))
   
-  - ### [Introduction]()
-    - [Say Hello, World! With Python](Introduction/SayHelloWorldWithPython.py)
-    - [Reading Raw Input](Introduction/ReadingRawInput.py)
-    - [Python If-Else](Introduction/PythonIfElse.py)
-    - [Arithmetic Operators](Introduction/ArithmeticOperators.py)
-    - [Python: Division](Introduction/PythonDivision.py)
-    - [Loops](Introduction/Loops.py)
-    - [Write a function](Introduction/Writeafunction.py)
-    - [Print Function](Introduction/PrintFunction.py)
+  - ### [Introduction](https://github.com/ammalik221/Python-Data-Structures/tree/master/HackerRank_Solutions/Introduction)
+    - Say Hello, World! With Python
+    - Reading Raw Input
+    - Python If-Else
+    - Arithmetic Operator
+    - Python: Division
+    - Loops
+    - Write a function
+    - Print Function
+    
 
