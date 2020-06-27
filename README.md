@@ -22,9 +22,9 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Breadth first traversal
   - Heaps
   - Binary Search Tree
-  - Read-Black Trees
+<!--  - Read-Black Trees
 
-<!--- ### [Graphs](https://github.com/ammalik221/Python-Data-Structures/tree/master/Graphs)
+- ### [Graphs](https://github.com/ammalik221/Python-Data-Structures/tree/master/Graphs)
   - Graph Representations
   - Traversal
   
@@ -32,7 +32,7 @@ This repository contains basic to intermediate Data Structures and Algorithms im
   - Dijkstra's Algorithm
   - Knapsack Problem
   - Dynamic Programming
-  - Travelling Saleman Problem-->
+  - Travelling Saleman Problem
   
 <br/>
   
@@ -51,3 +51,4 @@ Solutions of Python problems which are provided by HackerRank.([Here](https://ww
     - Print Function
     
 
+-->
